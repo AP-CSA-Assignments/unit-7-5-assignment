@@ -5,32 +5,23 @@ public class Main
 {
   public static void main(String[] args)
   {
-    Scanner sc = new Scanner(System.in);
-    ArrayList<String> input = new ArrayList<String>();
-
-    String word = "";
-    while (!word.equals("STOP"))
-    {
-      System.out.println("Implement me!");
-    }
+    // Test code here
   }
 
-  /** Returns the number of Strings in the ArrayList that has the letter
-   * as the second letter in that word.
-   * Precondition: The arr is not null, and is not empty.
-   * Precondition: The letter is exactly one letter.
+
+  /** Precondition: No element of arr is null.
+   * Precondition: arr is non-empty
    */
-  public static int countSecondInitial(ArrayList<String> arr, String letter)
+  public static void sortAndPrintDescending(String[] arr)
   {
-    return 0;
+    System.out.println("Implement me!");
   }
 
-  /** Returns the index of the second occurrence of target within the ArrayList
-   * If the target is not found, or is only found once, then -1 is returned.
-   * Precondition: Neither arr nor target are null.  The arr is non-empty.
+  /** Precondition: No element of arr is null.
+   * Precondition: arr is non-empty
    */
-  public static int searchSecond(final ArrayList<String> arr, String target)
+  public static void selectSortDescending(ArrayList<Integer> list)
   {
-    return -1;
+    System.out.println("Implement me!");
   }
 }

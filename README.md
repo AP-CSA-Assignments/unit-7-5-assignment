@@ -23,63 +23,12 @@ After you compile the shape classes, you only need to compile and run `Main.java
 # Instructions  
 
 ## Problem 1
-Implement the method `countSecondInitial` which accepts as parameters an `ArrayList` of `Strings` and a letter, stored in a `String`. (Precondition: the `String` variable `letter` has only one character. You do not need to check for this.) The method should return the number of `Strings` in the input `ArrayList` that has the target `letter` as the second letter in the word.
+Write a method, `public static void sortAndPrintDescending(String[] arr)`, which implements a selection sort on the array `arr`, so that the Strings are sorted in descending order. Then, print the sorted values on one line with a single space between values. Make sure to use the `String.compareTo()` method when sorting to decide the correct order of the Strings.
 
-In the sample run below, we look for the letter `"i"`, and get the number 3, since the words `"find"`, `"dice"`, and `"hi"` all have the letter `"i"` as the second letter in those words.
-
-Sample Run:
+For example, if `sortAndPrintDescending` is called with the array arr initialized as `{"forest", "apple", "willow", "lake", "trees"}` then the following should be printed:
 ```
-Please enter words, enter STOP to stop the loop.
-find
-dice
-hi
-dye
-STOP
-Enter the letter to search for
-i
-Search for i: 3
+willow trees lake forest apple
 ```
-Hint - the algorithm to implement this method is just a modified version of the linear search algorithm.
 
 ## Problem 2
-Write a public static method named `searchSecond` which implements a modified version of the linear search algorithm on an `ArrayList` of `String` objects. Instead of returning the index of the first appearance of the target `String` in the `ArrayList` your method should return the index of the second appearance of this String. If the target `String` is not in the `ArrayList` or only appears once, your method should return -1.
-
-Sample Run 1: 
-```
-Please enter words, enter STOP to stop the loop.
-apple
-bird
-cat
-apple
-apple
-STOP
-Enter String to search for.
-apple
-searchSecond returns: 3
-```
-Sample Run 2:
-```
-Please enter words, enter STOP to stop the loop.
-apple
-bird
-apple
-cat
-apple
-STOP
-Enter String to search for.
-bird
-searchSecond returns: -1 
-```
-Sample Run 3:
-```
-Please enter words, enter STOP to stop the loop.
-apple
-bird
-apple
-cat
-apple
-STOP
-Enter String to search for.
-dog
-searchSecond returns: -1
-```
+Write a method, `public static void selectSortDescending(ArrayList<Integer> list)`, which implements a selection sort on the `ArrayList` of `Integer` objects list. The elements should be sorted in descending order, so that the largest element comes first and the smallest element comes last. For example, if the parameter list would be printed as `[4, 6, 3, 7]` before a call to `selectSortDescending`, it would be printed as `[7, 6, 4, 3]` after the method call.
